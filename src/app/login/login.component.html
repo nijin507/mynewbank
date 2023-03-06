@@ -1,0 +1,28 @@
+<div>
+    <h5 style="color: rgba(163, 151, 151, 0.637); padding-left: 20px;padding-top: 20;">{{data}}</h5>
+</div>
+
+<div class="container mt-5">
+  <div class="card">
+      <a class="singup">sign in</a>
+      <div class="inputBox1">
+          <input type="text" id="u1" name="uname" (change)="acnoChange($event)"  required="required">
+          <span>a/c no:</span>
+      </div>
+
+      
+
+      <div class="inputBox">
+          <input type="password" (change)="passwordChange($event)" id="p1" name="password" required="required">
+          <span>Password</span>
+      </div>
+
+      
+
+      <button (click)="login()" class="enter">login</button>
+
+  </div>
+</div>
+
+
+
